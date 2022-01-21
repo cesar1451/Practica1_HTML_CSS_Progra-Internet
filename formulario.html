@@ -16,7 +16,33 @@
             <a href="index.html"> Ir al Inicio </a>
         </div>
         <div class="contenido">
-           
+            <h1> Contacto </h1>
+            <form id="form_contacto" name="contacto" action="formulario.html" method="get">
+                <fieldset>
+                    <h3> Formulario </h3>
+                    <label for="nombre"> Nombre: <input type="text" id="nombre" name="nombre" placeholder="nombre"></label> <br><br>
+                    <label for="correo"> Correo: <input type="email" id="correo" name="correo" placeholder="email"></label>  <br><br>
+                    Género: <br>
+                        <label for="hombre"><input type="radio" name="hombre" id="hombre" value="hombre"> Hombre </label> <br>
+                        <label for="mujer"><input type="radio" name="mujer" id="mujer" value="mujer"> Mujer </label>
+                    <br><br>   
+                    <label for="password"> Contraseña: <input type="password" id="password" name="password" placeholder="contraseña"></label> <br><br>
+                    <label for="comentario"> Comentario: <br>
+                        <textarea name="comentario" rows="10" cols="35"></textarea>
+                    </label> <br><br>      
+                    <label for="ciudad"> Ciudad: <select name="ciudad" id="ciudad">                      
+                        <datalist>
+                            <option value="guadalajara"> Guadalajara </option>
+                            <option value="zapopan"> Zapopan </option>
+                            <option value="tonala"> Tonalá </option>
+                            <option value="tlaquepaque"> Tlaquepaque </option>
+                            <option value="tlajomulco"> Tlajomulco </option>
+                        </datalist>                        
+                    </select></label> <br><br>
+                    <label for="interes_contacto"> Me interesa contactarte: <input type="checkbox" id="interes_contacto" name="interes_contacto"></label> <br><br>                   
+                    <input id="btn_enviar" type="button" value="Enviar" name="btn_enviar">
+                </fieldset>
+            </form>           
         </div>
         <div class="footer">
             <section id="contacto">
